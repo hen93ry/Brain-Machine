@@ -1,8 +1,8 @@
 /*
 Brain Machine
-Firmware_hen93ry
+Firmware
 for use with ATtiny25
-09-Oct-2015
+10-Oct-2015
 */
 
 
@@ -122,7 +122,7 @@ void do_brainwave_element(int index) {
       blink_LEDs( pgm_read_dword(&brainwaveTab[index].bwDuration), 300, 299 );
       return;   // Beta
     }
-
+/*
    else if (brainChr == 'g') {
       // Gamma
       // start Timer1 with the correct Offset Frequency for a binaural beat for the Brainwave Type
@@ -144,6 +144,7 @@ void do_brainwave_element(int index) {
       blink_LEDs( pgm_read_dword(&brainwaveTab[index].bwDuration), 218, 218 );
       return;   // Beta/Gamma
     }
+*/
 
    else if (brainChr == 'z') {
       // Alpha/Beta
